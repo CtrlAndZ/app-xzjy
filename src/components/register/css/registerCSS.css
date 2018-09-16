@@ -1,0 +1,97 @@
+.navbar{
+  background-color: rgb(248, 248, 248);
+  color: #6B6B6B;
+  border-radius: 0px !important;
+}
+.register_nav{
+  line-height: 50px;
+}
+.register_nav>a{
+  color: #08aa88;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#registerLogo{
+  width: 180px;
+  height: 50px;
+  float: left;
+  background-image: url(../../../assets/logo.png);
+}
+#register_login{
+  font-size: 16px;
+  margin-right: 50px;
+}
+
+#register_layout{
+  background-color: rgb(248, 248, 248);
+}
+#register_h3{
+  border-bottom:1px solid #6B6B6B;
+}
+
+#register_phone_container{
+  margin-top: 50px;
+}
+.form-control{
+  border-radius: 0px !important;
+}
+.input-group-addon{
+  border-radius: 0px !important;
+  color: #08aa88;
+}
+#register_phone{
+  font-size: 17px;
+  font-weight: bold;
+  color: #08aa88;
+  letter-spacing:1px;
+}
+#register_phone_tip{
+  color: #8a8b8a;
+}
+
+#register_pwd_container{
+  margin-top: 10px;
+}
+
+#register_pwd{
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing:2px;
+}
+
+#register_pwd_tip{
+  color: #8a8b8a;
+}
+
+.verification_code_span{
+  padding: 0px !important;
+  background-color: #fff;
+}
+.register_btn{
+  margin-top:35px;
+  margin-bottom: 50px;
+  width: 35%;
+  color: #fff;
+  background-color: #08aa88;
+}
+.register_btn:hover{
+  color: #08aa88;
+  background-color: transparent;
+  border: 1px solid #08aa88;
+}
+.register_phone_code{
+  display: none;
+}
+#register_phoneCode_div{
+  margin-top: 40px;
+}
+.code_span{
+}
+#code_time{
+  background-color: transparent;
+  color: #08aa88;
+  width: 90px;
+  height: 100%;
+
+}

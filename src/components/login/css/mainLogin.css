@@ -1,0 +1,122 @@
+#app{
+
+  width: 100%;
+
+  height: 100%;
+
+  background-image: url(../images/bg_login.jpg);
+
+  position: fixed;
+
+}
+
+#login{
+  margin-top: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #eee;
+  font-weight: bold;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(230,230,230,0.9);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff);
+}
+.login-h3{
+  margin-top: 20px;
+  color: #08aa88;
+  cursor: default;
+}
+.login-underline{
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+.login-user{
+  margin-top: 40px;
+}
+#phone{
+  font-size: 16px;
+  background-color: rgba(244,244,244,0.8);
+  color: #08aa88;
+  letter-spacing: 1px;
+}
+
+.login-password{
+  margin-top: 20px;
+}
+#password{
+  font-size: 16px;
+  background-color: rgba(244,244,244,0.8);
+  color: #08aa88;
+  letter-spacing: 2px;
+}
+#tip_div{
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+}
+.login-tip{
+  /*display: none;*/
+  margin-left: 5px;
+  font-size: 14px;
+  color: #FF155D;
+}
+#login-tip-register{
+  display: none;
+}
+#login-tip-error{
+  display: none;
+}
+#login-go{
+  width: 60%;
+  margin-top: 40px;
+  background-color: #08aa88;
+  font-weight: bold;
+}
+#login-go:hover{
+  color: #fff;
+  background-color: rgba(8,170,136,0);
+  border: 1px #08aa88 solid;
+  border-radius: 3px;
+  color:#08aa88;
+}
+#login-go:focus{
+  color: #fff;
+}
+.login-footer{
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+#login-forget{
+  color: #08aa88;
+  float: left;
+}
+#login-register{
+  color: #08aa88;
+  float: right;
+}
+.span-ic-phone{
+  color: #08aa88;
+}
+.span-ic-password{
+  color: #08aa88;
+}
+
+@media (max-width: 767px) {
+  /*在小于768像素的屏幕里*/
+  #login-layout{
+    border-radius: 0px;
+    background-color: rgba(230,230,230,0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff);
+  }
+  #login_world_img{
+    position: absolute;
+    float: left;
+    top: 80px;
+    left: 60px;
+    width: 280px;
+    height: 460px;
+  }
+}

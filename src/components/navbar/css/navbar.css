@@ -1,0 +1,38 @@
+.navbar{
+  border-radius: 0px;
+  background-color: #fff;
+}
+.navbar-brand{
+  padding:0px !important;
+  color: #08aa88 !important;
+}
+.navbar-nav>li>a{
+  color: #08aa88 !important;
+}
+.open>a{
+  background: transparent !important;
+}
+.navbar-form>.btn{
+  color:#08aa88;
+}
+.search{
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+#logo{
+  width: 180px;
+  height: 50px;
+  background-image: url(../../../assets/logo.png);
+}
+
+.act:hover:after{
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: auto;
+  bottom: 0;
+  right: auto;
+  height: 2px;
+  width: 100%;
+  background-color: #08aa88;
+}
