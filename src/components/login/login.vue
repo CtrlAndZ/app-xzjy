@@ -13,12 +13,12 @@
 									<span class="input-group-addon span-ic-phone">
 										<i class="glyphicon glyphicon-phone"></i>
 									</span>
-              <input class="form-control" id="phone" type="text" placeholder="您的手机号码">
+              <input class="form-control" id="phone" type="text" placeholder="您的手机号码" v-model="iphone">
             </div>
   <!--密码输入处-->
             <div class="login-password input-group input-group-lg">
               <span class="input-group-addon span-ic-password"><i class="glyphicon glyphicon-lock"></i></span>
-              <input class="form-control" id="password" type="password" placeholder="登录密码">
+              <input class="form-control" id="password" type="password" placeholder="登录密码" v-model="passWord">
             </div>
   <!--输入不正确提示处-->
             <div id="tip_div">
@@ -27,7 +27,7 @@
             </div>
   <!--登录按钮-->
             <div class="text-center">
-              <input type="button" class="btn" id="login-go" value="立即登录">
+              <input type="button" class="btn" id="login-go" @click="post()" value="立即登录">
             </div>
   <!--最底下-->
             <div class="login-footer">
@@ -46,12 +46,30 @@
 <script>
   import Navbar from '../navbar/navbar'
   export default {
-    name: '',
+    name: 'app',
     components: {
       Navbar
+    },
+    data: {
+      iphone: '',
+      passWord: ''
+    },
+    methods: {
+      post: function () {
+        //发送 post 请求
+        this.$http.post('http://localhost:9090/login', {
+          iphone: this.iphone,
+          passWord: this.passWord
+        }, {emulateJSON: true}).then(function (res) {
+          //成功回调函数
+          document.write(res.body)
+        }, function (res) {
+          //失败回调函数
+          console.log(res.status)
+        })
+      }
     }
   }
-
 </script>
 <style scoped>
   @import "css/mainLogin.css";
