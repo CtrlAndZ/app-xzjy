@@ -61,8 +61,10 @@
           iphone: this.iphone,
           passWord: this.passWord
         }, {emulateJSON: true}).then(function (res) {
+          //成功回调函数
           document.write(res.body)
         }, function (res) {
+          //失败回调函数
           console.log(res.status)
         })
       }
